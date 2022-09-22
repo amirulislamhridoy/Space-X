@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
     return (
-        <nav className='pt-7 pr-3 flex justify-between items-center'>
+        <nav className='pt-7 pr-3 flex justify-between items-center sticky'>
             <div className='flex'>
                 <a href=''>
                     <svg className='w-64' version="1.1" x="0px" y="0px" viewBox="0 0 400 50">
@@ -46,7 +46,7 @@ const Header = () => {
                     <li className='mx-4 font-semibold font-mono'><a className='text-white' href=''>STARLINK</a></li>
                 </ul>
             </div>
-            <FontAwesomeIcon className='text-white text-xl md:hidden' icon={faBars} />
+            <FontAwesomeIcon className='text-white text-xl lg:hidden' icon={faBars} />
         </nav>
     );
 };
